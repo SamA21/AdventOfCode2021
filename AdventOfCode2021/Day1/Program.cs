@@ -8,3 +8,7 @@ Console.WriteLine(numberList.Count);
 ParseDepths parseDepths = new ParseDepths();
 var increases = parseDepths.CountIncreases(numberList);
 Console.WriteLine(increases);
+var threes = parseDepths.ThreeList(numberList);
+var increasesThrees = parseDepths.CountIncreases(threes);
+Console.WriteLine(increasesThrees);
+
