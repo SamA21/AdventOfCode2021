@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OX+1cuYWzQBbZzW3g+pXf548k0JPMckZNfBIRpHFXw4ItX2AFIOWDDu0lI11TDoiOVe8xf/JQvci3S47mcZTIw==",
+  "dgSpecHash": "jouac2GAutd181Eip2AczkzXfJ1t9XyTd7+rDYIea6ny1dh162gkvP0zjNrcvhgLd9mBBuPxYQsT92teDZUstA==",
   "success": true,
-  "projectFilePath": "C:\\SourceCode\\Other\\AdventOfCode2022\\AdventOfCode2022\\AdventHelper\\AdventHelper.csproj",
+  "projectFilePath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\AdventHelper\\AdventHelper.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
