@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "AdventHelper/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/AdventHelper.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AdventHelper.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "AdventHelper/1.0.0": {
-      "type": "project",
-      "path": "../AdventHelper/AdventHelper.csproj",
-      "msbuildProject": "../AdventHelper/AdventHelper.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "AdventHelper >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\samaa\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SourceCode\\Other\\AdventOfCode2022\\AdventOfCode2022\\Day1\\Day1.csproj",
-      "projectName": "Day1",
-      "projectPath": "C:\\SourceCode\\Other\\AdventOfCode2022\\AdventOfCode2022\\Day1\\Day1.csproj",
+      "projectUniqueName": "C:\\SourceCode\\Other\\AdventOfCode2022\\AdventOfCode2022\\AdventHelper\\AdventHelper.csproj",
+      "projectName": "AdventHelper",
+      "projectPath": "C:\\SourceCode\\Other\\AdventOfCode2022\\AdventOfCode2022\\AdventHelper\\AdventHelper.csproj",
       "packagesPath": "C:\\Users\\samaa\\.nuget\\packages\\",
-      "outputPath": "C:\\SourceCode\\Other\\AdventOfCode2022\\AdventOfCode2022\\Day1\\obj\\",
+      "outputPath": "C:\\SourceCode\\Other\\AdventOfCode2022\\AdventOfCode2022\\AdventHelper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\samaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,11 +33,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\SourceCode\\Other\\AdventOfCode2022\\AdventOfCode2022\\AdventHelper\\AdventHelper.csproj": {
-              "projectPath": "C:\\SourceCode\\Other\\AdventOfCode2022\\AdventOfCode2022\\AdventHelper\\AdventHelper.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
