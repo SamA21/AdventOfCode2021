@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7cc5c9b5-4885-49fc-9a45-fad15e9d99d6": {
+      "ProjectGuid": "7cc5c9b5-4885-49fc-9a45-fad15e9d99d6",
+      "DisplayName": "Day1",
+      "ColorIndex": 0
+    },
+    "43879e4a-06ac-45fe-bdd4-4dd16a5ad915": {
+      "ProjectGuid": "43879e4a-06ac-45fe-bdd4-4dd16a5ad915",
+      "DisplayName": "AdventHelper",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

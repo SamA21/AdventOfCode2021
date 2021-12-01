@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\AdventHelper\\AdventHelper.csproj",
+      "projectUniqueName": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\AdventHelper\\AdventHelper.csproj",
       "projectName": "AdventHelper",
-      "projectPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\AdventHelper\\AdventHelper.csproj",
+      "projectPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\AdventHelper\\AdventHelper.csproj",
       "packagesPath": "C:\\Users\\samaa\\.nuget\\packages\\",
-      "outputPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\AdventHelper\\obj\\",
+      "outputPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\AdventHelper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\samaa\\AppData\\Roaming\\NuGet\\NuGet.Config",

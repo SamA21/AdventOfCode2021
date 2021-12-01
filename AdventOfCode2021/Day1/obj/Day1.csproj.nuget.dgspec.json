@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\Day1\\Day1.csproj": {}
+    "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\Day1\\Day1.csproj": {}
   },
   "projects": {
-    "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\AdventHelper\\AdventHelper.csproj": {
+    "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\AdventHelper\\AdventHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\AdventHelper\\AdventHelper.csproj",
+        "projectUniqueName": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\AdventHelper\\AdventHelper.csproj",
         "projectName": "AdventHelper",
-        "projectPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\AdventHelper\\AdventHelper.csproj",
+        "projectPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\AdventHelper\\AdventHelper.csproj",
         "packagesPath": "C:\\Users\\samaa\\.nuget\\packages\\",
-        "outputPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\AdventHelper\\obj\\",
+        "outputPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\AdventHelper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\Day1\\Day1.csproj": {
+    "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\Day1\\Day1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\Day1\\Day1.csproj",
+        "projectUniqueName": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\Day1\\Day1.csproj",
         "projectName": "Day1",
-        "projectPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\Day1\\Day1.csproj",
+        "projectPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\Day1\\Day1.csproj",
         "packagesPath": "C:\\Users\\samaa\\.nuget\\packages\\",
-        "outputPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\Day1\\obj\\",
+        "outputPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\Day1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\AdventHelper\\AdventHelper.csproj": {
-                "projectPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2022\\AdventHelper\\AdventHelper.csproj"
+              "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\AdventHelper\\AdventHelper.csproj": {
+                "projectPath": "C:\\SourceCode\\Other\\AdventOfCode2021\\AdventOfCode2021\\AdventHelper\\AdventHelper.csproj"
               }
             }
           }
