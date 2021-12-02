@@ -28,6 +28,22 @@ namespace AdventHelper
             }
             return codes;
         }
-
+        public List<string> GetListFromFile(string textFile)
+        {
+            List<string> lines = new List<string>();
+            FileStream fileStream = new FileStream(textFile, FileMode.Open);
+            using (StreamReader reader = new StreamReader(fileStream))
+            {
+                while (!reader.EndOfStream)
+                {
+                    string? line = reader.ReadLine();
+                    if (!string.IsNullOrWhiteSpace(line))
+                    {
+                        lines.Add(line);
+                    }
+                }
+            }
+            return lines;
+        }
     }
 }
