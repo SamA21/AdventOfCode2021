@@ -37,5 +37,38 @@ namespace Day2
             int depth = horizontal * vertical;
             return depth;
         }
+
+        public int GetFinalAimDepth(List<string> commandList)
+        {
+            int horizontal = 0;
+            int vertical = 0;
+            int aim = 0;
+            foreach (string command in commandList)
+            {
+                var splitCommand = command.Split(' ');
+                int amount = 0;
+                bool parsed = int.TryParse(splitCommand[1], out amount);
+                if (parsed)
+                {
+                    switch (splitCommand[0].ToLower())
+                    {
+                        case "forward":
+                            horizontal += amount;
+                            vertical += (aim * amount);
+                            break;
+                        case "down":
+                            aim += amount;
+                            break;
+                        case "up":
+                            aim -= amount;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+            int depth = horizontal * vertical;
+            return depth;
+        }
     }
 }

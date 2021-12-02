@@ -8,3 +8,5 @@ var commandList = reader.GetListFromFile(inputLocation);
 ParseMovement submarine = new ParseMovement();
 int totalDepth = submarine.GetFinalDepth(commandList);
 Console.WriteLine(totalDepth);
+int totalAimDepth = submarine.GetFinalAimDepth(commandList);
+Console.WriteLine(totalAimDepth);
