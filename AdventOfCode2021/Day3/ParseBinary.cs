@@ -45,5 +45,42 @@ namespace Day3
             }
             return oneCount;
         }
+              
+        public int GetLifeSupportRating(List<string> binaryStrings)
+        {
+            List<string> OxyRatingsList = binaryStrings;
+            List<string> Co2RatingsList = binaryStrings;
+            var firstLength = binaryStrings.First().Length;
+            for (int index = 0; index < firstLength; index++)
+            {
+                if (OxyRatingsList.Count > 1)
+                {
+                    OxyRatingsList = ReduceRatings(OxyRatingsList, index, false);
+                }
+
+                if (Co2RatingsList.Count > 1)
+                {
+                    Co2RatingsList = ReduceRatings(Co2RatingsList, index, true);
+                }
+            }
+            return Convert.ToInt32(OxyRatingsList.First(), 2) * Convert.ToInt32(Co2RatingsList.First(), 2);
+        }
+
+        private List<string> ReduceRatings(List<string> ratings, int index, bool isCo2)
+        {
+            var bitFrequency = FindBits(ratings, index);
+            if(isCo2)
+                ratings = ratings.Where(x => x[index] == bitFrequency.least).ToList();
+            else
+                ratings = ratings.Where(x => x[index] == bitFrequency.most).ToList();
+            return ratings;
+        }
+
+        private (char most, char least) FindBits(List<string> binaryStrings, int index)
+        {
+            var middlePoint = (float)binaryStrings.Count / 2;
+            var find1s = binaryStrings.Count(x => x[index] == '1');
+            return find1s >= middlePoint ? ('1', '0') : ('0', '1');
+        }
     }
 }
