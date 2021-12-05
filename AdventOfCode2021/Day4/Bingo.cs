@@ -83,7 +83,6 @@ namespace Day4
         }
         public void PlayGame(List<int[,,]> boards)
         {
-            bool winner = false;
             foreach(int gameNumber in Numbers)
             {
                var winngngBoards =  MarkBoards(gameNumber, boards);
