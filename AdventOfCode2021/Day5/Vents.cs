@@ -18,13 +18,16 @@ namespace Day5
             Overlaps = new HashSet<Vector2>();
         }
 
-        public int VentsOverlap(List<string> data)
+        public int VentsOverlap(List<string> data, bool countDiagonals)
         {
             foreach (var ventChain in data)
             {
                 var startEnd = ventChain.Split("->", StringSplitOptions.RemoveEmptyEntries);
                 var coords = GetStartEndValues(startEnd);
-                if(coords.start.X == coords.end.X || coords.start.Y == coords.end.Y)
+                if(coords.start.X != coords.end.X && coords.start.Y != coords.end.Y)
+                {
+                }
+                if(countDiagonals|| coords.start.X == coords.end.X || coords.start.Y == coords.end.Y)
                 {
                     Vector2 direction = coords.end - coords.start;
                     var deltaVector = new Vector2(Math.Sign(direction.X), Math.Sign(direction.Y));
