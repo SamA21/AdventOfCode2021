@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,32 +9,57 @@ namespace Day5
 {
     public class Vents
     {
-        List<int[,]> Points { get; set; }
+        public HashSet<Vector2> Points { get; set; }
+        public HashSet<Vector2> Overlaps { get; set; }
+
         public Vents()
         {
-            Points = new List<int[,]>();
+            Points = new HashSet<Vector2>();
+            Overlaps = new HashSet<Vector2>();
         }
 
         public int VentsOverlap(List<string> data)
         {
-            int overlapCount = 0;
-            foreach(var vents in data)
+            foreach (var ventChain in data)
             {
-                var startEnd = vents.Split("->", StringSplitOptions.RemoveEmptyEntries);
-                var intValues = GetXYValues(startEnd);
-                int XDiff = intValues.startX - intValues.endX;
-                int YDiff = intValues.startY - intValues.endY;
+                var startEnd = ventChain.Split("->", StringSplitOptions.RemoveEmptyEntries);
+                var coords = GetStartEndValues(startEnd);
+                if(coords.start.X == coords.end.X || coords.start.Y == coords.end.Y)
+                {
+                    Vector2 direction = coords.end - coords.start;
+                    var deltaVector = new Vector2(Math.Sign(direction.X), Math.Sign(direction.Y));
+                    var currentPoint = coords.start;
+                    AddPoint(currentPoint);
+                    while (currentPoint != coords.end)
+                    {
+                        currentPoint += deltaVector;
+                        AddPoint(currentPoint);
+                    }
+                }
+                
             }
-            return overlapCount;
+            return Overlaps.Count;
         }
-
-        private (int startX, int startY, int endX, int endY) GetXYValues(string[] startEnd)
+        private void AddPoint(Vector2 point)
+        {
+            if (Points.Contains(point))
+            {
+                Overlaps.Add(point);
+            }
+            else
+            {
+                Points.Add(point);
+            }
+        }
+        private (Vector2 start, Vector2 end) GetStartEndValues(string[] startEnd)
         {
             var start = startEnd[0];
             var end = startEnd[1];
             var startSplit = GetIntValues(start);
             var endSplit = GetIntValues(end);
-            return (startSplit.X, startSplit.Y, endSplit.X, endSplit.Y);
+            Vector2 startCoord = new Vector2(startSplit.X, startSplit.Y);
+            Vector2 endCoord = new Vector2(endSplit.X, endSplit.Y);
+            return (startCoord, endCoord);
         }
 
         private  (int X, int Y) GetIntValues(string side)
