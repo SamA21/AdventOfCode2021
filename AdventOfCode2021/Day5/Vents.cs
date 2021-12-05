@@ -24,9 +24,6 @@ namespace Day5
             {
                 var startEnd = ventChain.Split("->", StringSplitOptions.RemoveEmptyEntries);
                 var coords = GetStartEndValues(startEnd);
-                if(coords.start.X != coords.end.X && coords.start.Y != coords.end.Y)
-                {
-                }
                 if(countDiagonals|| coords.start.X == coords.end.X || coords.start.Y == coords.end.Y)
                 {
                     Vector2 direction = coords.end - coords.start;
