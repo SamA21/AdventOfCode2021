@@ -86,18 +86,25 @@ namespace Day4
             bool winner = false;
             foreach(int gameNumber in Numbers)
             {
-                MarkBoards(gameNumber, boards);
+               var winngngBoards =  MarkBoards(gameNumber, boards);
+               boards = boards.Except(winngngBoards).ToList();
             }
         }
 
-        private void MarkBoards(int gameNumber, List<int[,,]> boards)
+        private List<int[,,]> MarkBoards(int gameNumber, List<int[,,]> boards)
         {
             Announcer announcer = new Announcer(AnnounceResult);
             announcer(gameNumber);
-            foreach(var board in boards)
+            List<int[,,]> winningBoards =   new List<int[,,]>();
+            foreach (var board in boards)
             {
-                MarkBoard(gameNumber, board);
+               var winner = MarkBoard(gameNumber, board);
+                if (winner)
+                {
+                    winningBoards.Add(board);
+                }
             }
+            return winningBoards;
         }
 
         private bool MarkBoard(int gameNumber, int[,,] board)
