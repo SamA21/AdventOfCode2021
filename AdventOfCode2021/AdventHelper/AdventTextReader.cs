@@ -45,5 +45,27 @@ namespace AdventHelper
             }
             return lines;
         }
+        public List<int> GetSingleIntListFromFile(string textFile)
+        {
+            List<int> lines = new List<int>();
+            FileStream fileStream = new FileStream(textFile, FileMode.Open);
+            using (StreamReader reader = new StreamReader(fileStream))
+            {
+                while (!reader.EndOfStream)
+                {
+                    string? line = reader.ReadLine();
+                    if (!string.IsNullOrWhiteSpace(line))
+                    {
+                        string[] text = line.Split(',');
+                        foreach(var numberText in text)
+                        {
+                            int number = int.Parse(numberText);
+                            lines.Add(number);
+                        }
+                    }
+                }
+            }
+            return lines;
+        }
     }
 }
