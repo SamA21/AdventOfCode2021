@@ -8,19 +8,18 @@ namespace Day7
 {
     public class Crabs
     {
-        public int MoveCrabs(List<int> crabPositions)
+        public int MoveCrabs(List<int> crabPositions, bool isActualUsuage)
         {
             int maxValue = crabPositions.Max();
             List<int> totalFuel = new List<int>();
-            for(int target = 0; target < maxValue; target++)
+            for (int target = 0; target < maxValue; target++)
             {
-                int currentFuel = GetFuelUsage(target, crabPositions, false);
+                int currentFuel = GetFuelUsage(target, crabPositions, isActualUsuage);
                 totalFuel.Add(currentFuel);
             }
-            
+
             return totalFuel.Min();
         }
-
         private int GetFuelUsage(int target, List<int> crabPositions, bool isAcutal)
         {
             int totalFuel = 0;
@@ -56,17 +55,6 @@ namespace Day7
             }
             return fuel;
         }
-        public int MoveCrabsActual(List<int> crabPositions)
-        {
-            int maxValue = crabPositions.Max();
-            List<int> totalFuel = new List<int>();
-            for (int target = 0; target < maxValue; target++)
-            {
-                int currentFuel = GetFuelUsage(target, crabPositions, true);
-                totalFuel.Add(currentFuel);
-            }
-
-            return totalFuel.Min();
-        }
+        
     }
 }
