@@ -2,4 +2,4 @@
 
 AdventTextReader reader = new AdventTextReader();
 string inputLocation = $"data.txt";
-var octopusFlashes = reader.GetListFromFile(inputLocation);
+var caveLocations = reader.GetListFromFile(inputLocation);
